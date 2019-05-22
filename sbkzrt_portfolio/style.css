@@ -13,46 +13,43 @@ CodePen Collection: https://codepen.io/collection/XmearX/
 
 
 /* Create huge scrolling area (imitates height of a page) */
-main { padding: 200px 0 1500px 0; overflow: hidden; }
+main { padding: 200px 0 3500px 0; overflow: hidden; }
 
 /* Styles for wrap for demo */
 .wrap {
   text-align: center;
-  padding: 50px 0;
-/*
-  -moz-box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
-  -webkit-box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
-  box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
-*/
   position: relative;
 }
+
+.st0{fill:#ffffff;stroke:#000000;stroke-miterlimit:10;}
+.st1{fill:#000000;}
 
 /* Default Animation Styles */
 #animation {
 
-  width: 300px;
-  height: 100px;
+  width: 400px;
+  height: 0px;
   display: block;
   margin: 0 auto;
   left: 0px;
   right: 0px;
   position: fixed;
 }
-/*
-#animation i {
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 30px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-*/
 
-#hippo {
+#scene2{
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: red;
+}
+
+#scene {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: green;
+}
+
+#hippo, #third {
   visibility:hidden;
 }
