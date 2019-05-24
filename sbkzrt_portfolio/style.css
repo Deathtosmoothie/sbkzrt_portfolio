@@ -36,19 +36,25 @@ main { padding: 200px 0 3500px 0; overflow: hidden; }
   position: fixed;
 }
 
-#scene2{
-    display: block;
-    height: 20px;
-    width: 20px;
-    background: red;
+#third2 image{
+	width: 100px;
+	height: 100px;
 }
 
-#scene {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: green;
+#third2 {
+    stroke:url(#pattern);
+	opacity: 0.5;
+  
+  stroke-width:330px;
+
 }
+
+#third2:hover {
+	
+	stroke:url(#pattern);
+	
+}
+
 
 #hippo, #third {
   visibility:hidden;
