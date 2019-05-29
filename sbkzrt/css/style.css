@@ -16,7 +16,10 @@
 	src: url(../fonts/TT_Polls/TTPollsThin.otf);
     }
 
-
+body {
+	background-color: #4a919e;
+	font-family: TT_Polls_Thin;
+}
 .display-3{
 	font-family: PeaceSans;
 }
@@ -27,7 +30,11 @@
 .jumbotron {
 	background: none;
 }
-body {
-	background-color: #4a919e;
-	font-family: TT_Polls_Thin;
+.paintings_h {
+	font-family: PeaceSans;
+	font-size: 90px;
+}
+.paintings_img {
+	width: 300px;
+	display: block;
 }
