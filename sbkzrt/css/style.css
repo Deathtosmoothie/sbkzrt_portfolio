@@ -1,0 +1,29 @@
+
+@font-face {
+	font-family: 'PeaceSans';
+	font-weight: normal;
+	src: url(../fonts/PeaceSans.woff);
+    }
+
+@font-face {
+	font-family: 'TT_Polls_Regular';
+	font-weight: normal;
+	src: url(../fonts/TT_Polls/TTPollsRegular.otf);
+    }
+@font-face {
+	font-family: 'TT_Polls_Thin';
+	font-weight: normal;
+	src: url(../fonts/TT_Polls/TTPollsThin.otf);
+    }
+
+
+.display-3{
+	font-family: PeaceSans;
+}
+
+.header {
+	font-family: TT_Polls_Regular;
+}
+body {
+	font-family: TT_Polls_Thin;
+}
