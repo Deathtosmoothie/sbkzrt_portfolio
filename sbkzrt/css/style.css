@@ -24,6 +24,10 @@
 .header {
 	font-family: TT_Polls_Regular;
 }
+.jumbotron {
+	background: none;
+}
 body {
+	background-color: #4a919e;
 	font-family: TT_Polls_Thin;
 }
