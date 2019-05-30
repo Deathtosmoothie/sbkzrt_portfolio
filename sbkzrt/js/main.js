@@ -16,3 +16,23 @@ if($('.navbar').length > 0){
         checkScroll();
     });
 }
+
+$('.nav-link').on( 'click', function(){ 
+    var el = $(this);
+    var dest = el.attr('href'); // получаем направление
+    if(dest !== undefined && dest !== '') { // проверяем существование
+        $('html').animate({ 
+    	    scrollTop: $(dest).offset().top - 80 // прокручиваем страницу к требуемому элементу
+        }, 500 // скорость прокрутки
+        );
+    }
+    return false;
+});
+
+//$('.nav-link').click(function(event) {
+//    event.preventDefault();
+//    var targetOffset = $('.item_h').offset().top;
+//    $("html, body").animate({
+//        scrollTop: targetOffset + "px"
+//    },1000);
+//});
