@@ -54,6 +54,10 @@ body {
 	width: 100%;
 	display: block;
 }
+#paintings_svg {
+	stroke: #fff;
+	stroke-width: 10px;
+}
 #contact {
 	margin-top: 143px;
 }

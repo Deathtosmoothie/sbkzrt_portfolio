@@ -23,7 +23,7 @@ $('.nav-link').on( 'click', function(){
     if(dest !== undefined && dest !== '') { // проверяем существование
         $('html').animate({ 
     	    scrollTop: $(dest).offset().top - 80 // прокручиваем страницу к требуемому элементу
-        }, 500 // скорость прокрутки
+        }, 1200 // скорость прокрутки
         );
     }
     return false;
