@@ -27,14 +27,41 @@ body {
 .header {
 	font-family: TT_Polls_Regular;
 }
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: rgb(68, 68, 68); /* IE */
+    background: rgba(0, 0, 0, 0.68); /* NON-IE */
+}
+.main_block .row {
+	margin-top: 140px;
+}
 .jumbotron {
 	background: none;
 }
-.paintings_h {
+.item_h {
+/*	display: none;*/
 	font-family: PeaceSans;
-	font-size: 90px;
+	font-size: 100px;
 }
-.paintings_img {
-	width: 300px;
+.item_img {
+	width: 100%;
 	display: block;
+}
+#contact {
+	margin-top: 143px;
+}
+#contactForm label, button {
+	font-family: TT_Polls_Regular;
+}
+footer {
+	margin-top: 10px;
+	height: 80px;
+	background: #343a40;
 }
