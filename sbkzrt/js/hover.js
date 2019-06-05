@@ -1,10 +1,10 @@
 $(function() {
 
 var tlHover = new TimelineLite({paused: true});
-	tlHover.staggerFrom(".st0", 0.05, {drawSVG:0,ease:Linear.easeNone}, 0.1)
-	.staggerFrom(".st1", 0.05, {drawSVG:0,ease:Linear.easeNone}, 0.1)
-	.staggerFrom(".st2", 0.05, {drawSVG:0,ease:Linear.easeNone}, 0.1)
-	.staggerFrom(".st3", 0.05, {drawSVG:0,ease:Linear.easeNone}, 0.1);
+	tlHover.staggerFrom(".st0", 0.03, {drawSVG:0,ease:Linear.easeNone}, 0.1)
+	.staggerFrom(".st1", 0.03, {drawSVG:0,ease:Linear.easeNone}, 0.1)
+	.staggerFrom(".st2", 0.03, {drawSVG:0,ease:Linear.easeNone}, 0.1)
+	.staggerFrom(".st3", 0.03, {drawSVG:0,ease:Linear.easeNone}, 0.1);
 	
   $('#paintings').hover(
 	  function(){
