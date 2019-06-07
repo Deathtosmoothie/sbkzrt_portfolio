@@ -41,15 +41,16 @@ $(window).on('load', function(){
 
 
 
-	var $target = $('#svg_1').contents().find('#ear')[0];
-	var $morph = $('#svg_2').contents().find('#finger_1')[0];
+	
 
 	
 // Init ScrollMagic Controller
   var scrollMagicController = new ScrollMagic.Controller();
-	
+	var $target = $('#svg_1').contents().find('#ear')[0];
+	var $morph = $('#svg_2').contents().find('#finger_1')[0];
 //	console.log($target);
 //	console.log($morph);
+	
 	 var tween = new TimelineMax()
     .to($target, 1, {morphSVG:$morph});
   // Create Animation for 0.5s
@@ -95,13 +96,14 @@ $(window).on('load', function(){
   
   // Create the Scene and trigger when visible
   var scene = new ScrollMagic.Scene({
-    triggerElement: '#home',
+    triggerElement: 'main',
     offset: 350, /* offset the trigger offset below #scene's top */
     duration: 2200
   })
   .setTween(tween)
   .addTo(scrollMagicController);
 
+	console.log(scene)
 	
 	});
 });

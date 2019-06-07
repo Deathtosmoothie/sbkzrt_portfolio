@@ -65,10 +65,14 @@ main {
 	visibility: hidden;
 
 }
+main {
+	position: relative;
+}
 #home {
 	display: block;
 	position: fixed;
 	height: 860px;
+	width: 800px;
 }
 .item_h {
 /*	display: none;*/
