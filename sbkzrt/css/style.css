@@ -53,14 +53,15 @@ main {
 .jumbotron {
 	background: none;
 }
-.svg_1, .svg_2 {
+#svg_1, #svg_2 {
 	float: left;
-/*	width: 100%;*/
+	width: 100%;
 	height: 100%;
 	display: block;
 	position: relative;
 }
-.svg_2_in g path{
+
+#svg_2_in g path{
 	visibility: hidden;
 
 }
