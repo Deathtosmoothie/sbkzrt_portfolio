@@ -60,9 +60,14 @@ main {
 	display: block;
 	position: relative;
 }
+/*
+#svg_2 {
+	width: 1000px;
+}
+*/
 
 #svg_2_in g path{
-	visibility: hidden;
+/*	visibility: hidden;*/
 
 }
 main {
@@ -72,7 +77,7 @@ main {
 	display: block;
 	position: fixed;
 	height: 860px;
-	width: 800px;
+	width: 1366px;
 }
 .item_h {
 /*	display: none;*/
