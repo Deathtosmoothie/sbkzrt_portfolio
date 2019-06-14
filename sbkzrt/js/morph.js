@@ -30,13 +30,12 @@ $(window).on('load', function(){
 	var $pre_white_blur = $('#svg_1').contents().find('#pre_white_blur')[0];
 	
 	
-	//additional paths
-//	first_scene.unshift($ear_blur);
-//	second_scene.unshift($white_blur);
-	first_scene.unshift($fill_1);
-	second_scene.unshift($fill_2);
+	//ADDITIONAL PATHS
+	first_scene.unshift($nose_black,$pre_white_blur,$fill_1);
+	second_scene.unshift($nose_white,$white_blur,$fill_2);
 	
 	console.log(first_scene.length,second_scene.length)
+
 
 	
 	//RIGHT EAR - RIGHT FINGER
@@ -44,20 +43,19 @@ $(window).on('load', function(){
 		first_scene.push($('#svg_1').contents().find('#ear_r' + [i])[0]);
 	}
 	
-	white_arr = []
-	to_white_arr = []
-	to_white_arr.push($nose_black,$pre_white_blur);
-	white_arr.push($nose_white,$white_blur);
 
-	console.log($pre_white_blur);
 	
-	for(i=0; i < 10;i++) {
+	for(i=0; i < 12;i++) {
+		
+		var morph_obj = {morphSVG:second_scene[i]};
+		
+		if(i<2) {
+			morph_obj = {morphSVG:second_scene[i],fill:"#FFF"};
+		}
 		
 		var tween = new TimelineMax()
-    	.to(first_scene[i], 1, {morphSVG:second_scene[i]})
-		.to(to_white_arr[i],1,{morphSVG:white_arr[i],fill:"#fff"});
-//		.to($pre_white_blur,3,{morphSVG:$white_blur,fill:"#fff"});
-		
+    	.to(first_scene[i], 1, morph_obj);
+		console.log(i);
 	
   // Create the Scene and trigger when visible
   var scene = new ScrollMagic.Scene({
