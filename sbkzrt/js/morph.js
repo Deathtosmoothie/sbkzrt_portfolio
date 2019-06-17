@@ -39,20 +39,21 @@ $(window).on('load', function(){
 	
 	
 	//RIGHT EAR - RIGHT FINGER
-	for(i=1;i<8;i++) {
+	for(i=1;i<9;i++) {
 		first_scene.push($('#svg_1').contents().find('#ear_r' + [i])[0]);
 	}
 	
-	for(i=0;i<9;i++) {
+	for(i=0;i<11;i++) {
 		second_scene.push($('#svg_2').contents().find('#finger_r' + [i])[0]);
 	}
 	
 console.log(first_scene.length,second_scene.length)
-	console.log(second_scene[12])
+//console.log(second_scene[23])
 	
-	for(i=0; i < 23;i++) {
+	for(i=0; i < 24 ;i++) {
 		
 		morph_obj = {morphSVG:second_scene[i]};
+		morph_targ = first_scene[i];
 		
 		if(i<2) {
 			morph_obj = {morphSVG:second_scene[i],fill:"#FFF"};
@@ -63,8 +64,13 @@ console.log(first_scene.length,second_scene.length)
 			morph_obj = {morphSVG:second_scene[11]};
 		}
 		
+//		if(i>22) {
+//			morph_targ = first_scene[22];
+//			console.log(second_scene[i]);
+//		}
+		
 		var tween = new TimelineMax()
-    	.to(first_scene[i], 1, morph_obj);
+    	.to(morph_targ, 1, morph_obj);
 //		console.log(i);
 //	
   // Create the Scene and trigger when visible
