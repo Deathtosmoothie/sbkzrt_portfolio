@@ -47,10 +47,20 @@ $(window).on('load', function(){
 		second_scene.push($('#svg_2').contents().find('#finger_r' + [i])[0]);
 	}
 	
-console.log(first_scene.length,second_scene.length)
-//console.log(second_scene[23])
+	//TONGUE SHORT - TONGUE LONG
+	for(i=0;i<15;i++) {
+		first_scene.push($('#svg_1').contents().find('#ton_s' + [i])[0]);
+	}
+		
 	
-	for(i=0; i < 24 ;i++) {
+	for(i=0;i<21;i++) {
+		second_scene.push($('#svg_2').contents().find('#ton_l' + [i])[0]);
+	}
+	
+console.log(first_scene.length,second_scene.length)
+console.log(first_scene[24])
+	
+	for(i=0; i < 39 ;i++) {
 		
 		morph_obj = {morphSVG:second_scene[i]};
 		morph_targ = first_scene[i];
@@ -62,6 +72,10 @@ console.log(first_scene.length,second_scene.length)
 		
 		if(i>12 && i<14) {
 			morph_obj = {morphSVG:second_scene[11]};
+		}
+		
+		if(i>28) {
+			morph_obj = {morphSVG:second_scene[i],fill:"#0C0C0C"};
 		}
 		
 //		if(i>22) {
