@@ -78,9 +78,9 @@ console.log(first_scene.length,second_scene.length)
 			morph_obj = {morphSVG:second_scene[i],fill:"#0C0C0C"};
 		}
 		
-		if(i==45) {
-			morph_obj = {morphSVG:second_scene[i],fill:"#BC6F3B"};
-		}
+//		if(i==45) {
+//			morph_obj = {morphSVG:second_scene[i],fill:"#BC6F3B"};
+//		}
 //		
 		var tween = new TimelineMax()
     	.to(morph_targ, 1, morph_obj);
