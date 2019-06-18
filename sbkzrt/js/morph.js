@@ -48,19 +48,19 @@ $(window).on('load', function(){
 	}
 	
 	//TONGUE SHORT - TONGUE LONG
-	for(i=0;i<15;i++) {
+	for(i=0;i<22;i++) {
 		first_scene.push($('#svg_1').contents().find('#ton_s' + [i])[0]);
 	}
 		
 	
-	for(i=0;i<21;i++) {
+	for(i=0;i<22;i++) {
 		second_scene.push($('#svg_2').contents().find('#ton_l' + [i])[0]);
 	}
 	
 console.log(first_scene.length,second_scene.length)
-console.log(first_scene[24])
+	console.log(second_scene[45])
 	
-	for(i=0; i < 39 ;i++) {
+	for(i=0; i < 46 ;i++) {
 		
 		morph_obj = {morphSVG:second_scene[i]};
 		morph_targ = first_scene[i];
@@ -78,11 +78,10 @@ console.log(first_scene[24])
 			morph_obj = {morphSVG:second_scene[i],fill:"#0C0C0C"};
 		}
 		
-//		if(i>22) {
-//			morph_targ = first_scene[22];
-//			console.log(second_scene[i]);
-//		}
-		
+		if(i==45) {
+			morph_obj = {morphSVG:second_scene[i],fill:"#BC6F3B"};
+		}
+//		
 		var tween = new TimelineMax()
     	.to(morph_targ, 1, morph_obj);
 //		console.log(i);
